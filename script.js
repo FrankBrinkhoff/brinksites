@@ -1,13 +1,10 @@
-// Toon huidig jaar in footer
-document.getElementById("year").textContent = new Date().getFullYear();
+// Voor het contactformulier
+const form = document.getElementById("contact-form");
+const confirmation = document.getElementById("confirmation");
 
-// Contactformulier melding
-const form = document.getElementById("contactForm");
-const message = document.getElementById("formMessage");
-
-form.addEventListener("submit", function(e){
+form.addEventListener("submit", function(e) {
     e.preventDefault();
-    message.textContent = "Bedankt! Je bericht is succesvol verzonden.";
-    message.style.color = "green";
+    // Je kan hier later mail API toevoegen
+    confirmation.style.display = "block";
     form.reset();
 });
