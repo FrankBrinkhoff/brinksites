@@ -63,19 +63,20 @@
         <div class="content-card contact-card">
             <h2>Contact</h2>
 
-            <form id="contact-form" action="https://formspree.io/f/https://formspree.io/f/mkoonpkq" method="POST">
+        <form id="contact-form" action="https://formspree.io/f/JOUWCODE" method="POST">
+    <label>Naam</label>
+    <input type="text" name="name" required>
 
-                <label>Naam</label>
-                <input type="text" required>
+    <label>E-mail</label>
+    <input type="email" name="email" required>
 
-                <label>E-mail</label>
-                <input type="email" required>
+    <label>Bericht</label>
+    <textarea name="message" rows="4" required></textarea>
 
-                <label>Bericht</label>
-                <textarea rows="4" required></textarea>
+    <button type="submit">Verstuur bericht</button>
+</form>
+<p id="confirmation">Bedankt! Je bericht is verzonden.</p>
 
-                <button type="submit">Verstuur bericht</button>
-            </form>
 
             <p id="confirmation">Bedankt! Je bericht is verzonden.</p>
         </div>
