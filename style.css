@@ -1,68 +1,41 @@
-:root {
-    --primary: #2563eb;
-    --light: #f8fafc;
-    --dark: #0f172a;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    background: var(--light);
-    color: var(--dark);
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
-
-header {
-    background: var(--primary);
-    color: white;
-    padding: 50px 20px;
-}
-
-header .btn {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 20px;
-    background: white;
-    color: var(--primary);
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-section {
-    padding: 40px 20px;
-}
-
-footer {
-    background: var(--dark);
-    color: white;
-    padding: 20px;
-}
-
-input, textarea {
-    width: 100%;
-    max-width: 400px;
-    padding: 10px;
-    margin: 5px 0;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-}
-button {
-    padding: 10px 20px;
-    background: var(--primary);
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
+/* ========== THEME COLORS ========== */
 :root {
     --blue-light: #38bdf8;
     --blue-soft: #bae6fd;
     --blue-accent: #0ea5e9;
-    --white: #ffffff;
 }
 
-/* Animated background */
+/* ========== BASE ========== */
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    background: white;
+    color: #0f172a;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* ========== HERO ========== */
+.hero-minimal {
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 10vw;
+}
+
+.hero-minimal h1 {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 700;
+    color: var(--blue-accent);
+}
+
+.hero-minimal p {
+    font-size: 1.2rem;
+    max-width: 480px;
+    color: #334155;
+}
+
+/* ========== ANIMATED BACKGROUND ========== */
 body::before {
     content: "";
     position: fixed;
