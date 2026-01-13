@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brinksites - Heldere, moderne websites</title>
     <meta name="description" content="Brinksites - Wij bouwen heldere, moderne websites op maat door Frank Brinkhoff">
-    
+
     <!-- Google Fonts: Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,5 +22,47 @@
         <p>Wij bouwen heldere, moderne websites</p>
     </section>
 
-    <!-- EVENTUELE TOEKOMSTIGE SECTIES --
+    <!-- OVER MIJ -->
+    <section class="about">
+        <h2>Over mij</h2>
+        <p>Ik ben Frank Brinkhoff en ik bouw websites op maat met passie voor design, functionaliteit en kwaliteit.</p>
+    </section>
 
+    <!-- DIENSTEN -->
+    <section class="services">
+        <h2>Diensten</h2>
+        <ul>
+            <li>Website ontwikkeling</li>
+            <li>Responsive design</li>
+            <li>Onderhoud & optimalisatie</li>
+            <li>SEO / performance</li>
+        </ul>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact">
+        <h2>Contact</h2>
+        <form id="contact-form">
+            <label for="name">Naam</label>
+            <input type="text" id="name" name="name" placeholder="Jouw naam" required>
+
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="Jouw e-mail" required>
+
+            <label for="message">Bericht</label>
+            <textarea id="message" name="message" placeholder="Typ je bericht hier..." required></textarea>
+
+            <button type="submit">Verstuur</button>
+        </form>
+        <p id="confirmation" style="display:none;">Bedankt! Je bericht is verzonden.</p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Brinksites © 2026 | Frank Brinkhoff</p>
+        <p>Minimalistisch webdesign</p>
+    </footer>
+
+</body>
+<script src="script.js"></script>
+</html>
