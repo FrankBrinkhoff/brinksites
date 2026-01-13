@@ -40,3 +40,4 @@ form.addEventListener("submit", async function(e) {
     button.textContent = "Verstuur bericht";
     button.disabled = false;
 });
+
