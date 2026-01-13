@@ -3,68 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brinksites - Heldere, moderne websites</title>
-    <meta name="description" content="Brinksites - Wij bouwen heldere, moderne websites op maat door Frank Brinkhoff">
 
-    <!-- Google Fonts: Inter -->
+    <title>BrinkSites — Websites die klanten opleveren</title>
+    <meta name="description" content="BrinkSites bouwt moderne, snelle websites op maat voor ondernemers.">
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-    <!-- Stylesheet -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- HERO SECTIE -->
-   <section class="hero-minimal">
-    <h1 class="hero-title">Brinksites</h1>
-    <p>Wij bouwen heldere, moderne websites</p>
-    <a href="#about" class="scroll-down">&#x25BC;</a> <!-- zwarte pijl -->
-</section>
-
-    <!-- OVER MIJ -->
-    <section class="about" id="about">
-
-        <h2>Over mij</h2>
-        <p>Ik ben Frank Brinkhoff en ik bouw websites op maat met passie voor design, functionaliteit en kwaliteit.</p>
+    <!-- HERO -->
+    <section class="hero">
+        <h1 class="hero-title">
+            Websites die <span>klanten opleveren</span>
+        </h1>
+        <p class="hero-subtitle">
+            BrinkSites bouwt snelle, moderne websites voor ondernemers die online willen groeien.
+        </p>
+        <a href="#about" class="scroll-down">▼</a>
     </section>
 
-    <!-- DIENSTEN -->
-    <section class="services">
-        <h2>Diensten</h2>
-        <ul>
-            <li>Website ontwikkeling</li>
-            <li>Responsive design</li>
-            <li>Onderhoud & optimalisatie</li>
-            <li>SEO / performance</li>
-        </ul>
+    <!-- ABOUT -->
+    <section id="about">
+        <div class="content-card">
+            <h2>Over BrinkSites</h2>
+            <p>
+                Mijn naam is Frank Brinkhoff, een jonge ondernemer gespecialiseerd in het bouwen van moderne websites
+                en maatwerk codering.
+            </p>
+            <p>
+                Met BrinkSites help ik bedrijven en zelfstandigen om online professioneel, betrouwbaar en onderscheidend
+                over te komen. Ik combineer strak design met schone code — geen templates, maar oplossingen die werken.
+            </p>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section>
+        <div class="content-card">
+            <h2>Diensten</h2>
+            <ul>
+                <li><strong>Websites op maat</strong> – volledig gecodeerd voor jouw bedrijf</li>
+                <li><strong>Mobile-first design</strong> – perfect op elk scherm</li>
+                <li><strong>Snelheid & SEO</strong> – betere prestaties en vindbaarheid</li>
+                <li><strong>Onderhoud & support</strong> – ook na oplevering beschikbaar</li>
+            </ul>
+        </div>
     </section>
 
     <!-- CONTACT -->
-    <section class="contact">
-        <h2>Contact</h2>
-        <form id="contact-form">
-            <label for="name">Naam</label>
-            <input type="text" id="name" name="name" placeholder="Jouw naam" required>
+    <section>
+        <div class="content-card contact-card">
+            <h2>Contact</h2>
 
-            <label for="email">E-mail</label>
-            <input type="email" id="email" name="email" placeholder="Jouw e-mail" required>
+            <form id="contact-form">
+                <label>Naam</label>
+                <input type="text" required>
 
-            <label for="message">Bericht</label>
-            <textarea id="message" name="message" placeholder="Typ je bericht hier..." required></textarea>
+                <label>E-mail</label>
+                <input type="email" required>
 
-            <button type="submit">Verstuur</button>
-        </form>
-        <p id="confirmation" style="display:none;">Bedankt! Je bericht is verzonden.</p>
+                <label>Bericht</label>
+                <textarea rows="4" required></textarea>
+
+                <button type="submit">Verstuur bericht</button>
+            </form>
+
+            <p id="confirmation">Bedankt! Je bericht is verzonden.</p>
+        </div>
     </section>
 
     <!-- FOOTER -->
     <footer>
-        <p>Brinksites © 2026 | Frank Brinkhoff</p>
-        <p>Minimalistisch webdesign</p>
+        <p>© 2026 BrinkSites — Frank Brinkhoff</p>
+        <p>Webdesign & development voor ambitieuze ondernemers</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
 </html>
