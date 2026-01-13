@@ -55,3 +55,31 @@ button {
     border-radius: 5px;
     cursor: pointer;
 }
+:root {
+    --blue-light: #38bdf8;
+    --blue-soft: #bae6fd;
+    --blue-accent: #0ea5e9;
+    --white: #ffffff;
+}
+
+/* Animated background */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background:
+        radial-gradient(circle at 20% 30%, var(--blue-soft), transparent 40%),
+        radial-gradient(circle at 80% 60%, var(--blue-light), transparent 45%),
+        radial-gradient(circle at 50% 90%, var(--blue-accent), transparent 50%);
+    animation: spiralMove 30s linear infinite;
+    z-index: -1;
+}
+
+@keyframes spiralMove {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+    100% {
+        transform: rotate(360deg) scale(1.2);
+    }
+}
