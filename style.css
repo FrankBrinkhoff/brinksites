@@ -1,20 +1,23 @@
-/* ========== THEME COLORS ========== */
+/* ========== KLEUREN THEMA ========== */
 :root {
     --blue-light: #38bdf8;
     --blue-soft: #bae6fd;
     --blue-accent: #0ea5e9;
+    --white: #ffffff;
+    --text-dark: #0f172a;
+    --text-gray: #334155;
 }
 
-/* ========== BASE ========== */
+/* ========== BASIS ========== */
 body {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-    background: white;
-    color: #0f172a;
+    font-family: 'Inter', system-ui, sans-serif;
+    background: var(--white);
+    color: var(--text-dark);
     margin: 0;
     line-height: 1.6;
 }
 
-/* ========== HERO ========== */
+/* ========== HERO SECTIE ========== */
 .hero-minimal {
     min-height: 90vh;
     display: flex;
@@ -24,18 +27,22 @@ body {
 }
 
 .hero-minimal h1 {
-    font-size: clamp(2.5rem, 5vw, 4rem);
-    font-weight: 700;
+    font-size: clamp(2.8rem, 6vw, 4.2rem);
+    font-weight: 600;
+    letter-spacing: -0.02em;
     color: var(--blue-accent);
+    margin: 0;
 }
 
 .hero-minimal p {
-    font-size: 1.2rem;
-    max-width: 480px;
-    color: #334155;
+    font-size: 1.1rem;
+    font-weight: 300;
+    margin-top: 0.8rem;
+    max-width: 420px;
+    color: var(--text-gray);
 }
 
-/* ========== ANIMATED BACKGROUND ========== */
+/* ========== ANIMATED ACHTERGROND ========== */
 body::before {
     content: "";
     position: fixed;
@@ -48,6 +55,7 @@ body::before {
     z-index: -1;
 }
 
+/* ========== ANIMATIE ========== */
 @keyframes spiralMove {
     0% {
         transform: rotate(0deg) scale(1);
@@ -56,3 +64,4 @@ body::before {
         transform: rotate(360deg) scale(1.2);
     }
 }
+
