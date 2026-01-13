@@ -1,10 +1,17 @@
-// Voor het contactformulier
 const form = document.getElementById("contact-form");
 const confirmation = document.getElementById("confirmation");
 
-form.addEventListener("submit", function(e) {
+form.addEventListener("submit", function (e) {
     e.preventDefault();
-    // Je kan hier later mail API toevoegen
-    confirmation.style.display = "block";
-    form.reset();
+
+    const button = form.querySelector("button");
+    button.textContent = "Verzenden...";
+    button.disabled = true;
+
+    setTimeout(() => {
+        confirmation.style.display = "block";
+        form.reset();
+        button.textContent = "Verstuur bericht";
+        button.disabled = false;
+    }, 800);
 });
