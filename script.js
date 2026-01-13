@@ -1,18 +1,19 @@
+// Selecteer formulier en bevestigingselement
 const form = document.getElementById("contact-form");
 const confirmation = document.getElementById("confirmation");
 
+// Formulier submit event
 form.addEventListener("submit", async function(e) {
-    e.preventDefault(); // voorkomt dat de pagina refresh
+    e.preventDefault(); // voorkom page refresh
 
     const button = form.querySelector("button");
     button.textContent = "Verzenden...";
     button.disabled = true;
 
-    // haal alle form gegevens op
     const data = new FormData(form);
 
     try {
-        // stuur naar Formspree
+        // Verstuur data naar Formspree
         const response = await fetch(form.action, {
             method: "POST",
             body: data,
@@ -22,21 +23,32 @@ form.addEventListener("submit", async function(e) {
         });
 
         if (response.ok) {
-            // laat bevestiging zien
+            // Bevestiging tonen met fade-in
             confirmation.style.display = "block";
-            confirmation.style.opacity = "1";
+            confirmation.style.opacity = "0";
+            setTimeout(() => {
+                confirmation.style.opacity = "1";
+            }, 50);
 
-            form.reset(); // maak formulier leeg
+            // Formulier resetten
+            form.reset();
+
+            // Fade-out na 5 seconden
+            setTimeout(() => {
+                confirmation.style.opacity = "0";
+                setTimeout(() => {
+                    confirmation.style.display = "none";
+                }, 600); // match CSS transition duration
+            }, 5000);
         } else {
-            alert("Er ging iets mis, probeer het later opnieuw.");
+            alert("Er ging iets mis bij het verzenden. Probeer het later opnieuw.");
         }
     } catch (error) {
-        alert("Er ging iets mis, probeer het later opnieuw.");
+        alert("Er ging iets mis bij het verzenden. Probeer het later opnieuw.");
         console.error(error);
     }
 
-    // reset button
+    // Knop terugzetten
     button.textContent = "Verstuur bericht";
     button.disabled = false;
 });
-
