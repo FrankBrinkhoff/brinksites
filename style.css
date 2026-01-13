@@ -44,6 +44,36 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
+/* EB Garamond font import */
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600&display=swap');
+
+.hero-title {
+    font-family: 'EB Garamond', serif;
+    font-weight: 600;
+    font-size: clamp(2.2rem, 5vw, 3.5rem); /* kleiner dan voorheen */
+    margin: 0;
+    color: var(--blue-accent);
+}
+
+/* Scroll pijl */
+.scroll-down {
+    display: inline-block;
+    margin-top: 2rem;
+    font-size: 2rem;
+    color: #000; /* zwart */
+    text-decoration: none;
+    transition: transform 0.3s;
+}
+
+.scroll-down:hover {
+    transform: translateY(5px);
+    cursor: pointer;
+}
+
+/* Smooth scroll voor hele pagina */
+html {
+    scroll-behavior: smooth;
+}
 
 /* ================== SECTIES ================== */
 section {
