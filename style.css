@@ -188,3 +188,38 @@ body::before {
     height: 42px;  /* past de grootte van het logo aan */
     width: auto;
 }
+
+/* Hero title */
+.hero-title {
+    font-family: 'EB Garamond', serif;
+    font-weight: 600;
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    margin: 0;
+    margin-bottom: 0.5rem;
+    color: var(--blue-accent);
+}
+
+/* Hero subtitle */
+.hero-subtitle {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: clamp(1.2rem, 3vw, 1.6rem);
+    color: var(--text-gray);
+    margin-top: 0;
+}
+
+/* Hero iets hoger plaatsen */
+.hero-minimal {
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 5rem 10vw;
+    text-align: center;
+}
+
+/* Logo iets groter */
+.logo-container img {
+    height: 60px;
+    width: auto;
+}
