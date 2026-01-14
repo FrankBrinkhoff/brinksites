@@ -1,97 +1,34 @@
-<!DOCTYPE html>
-<html lang="nl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+/* Hero title */
+.hero-title {
+    font-family: 'EB Garamond', serif;
+    font-weight: 600;
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    margin: 0;
+    margin-bottom: 0.5rem;
+    color: var(--blue-accent);
+}
 
-    <title>BrinkSites — professionele websites voor jouw bedrijf</title>
-    <meta name="description" content="BrinkSites bouwt moderne, snelle websites op maat voor ondernemers.">
+/* Hero subtitle */
+.hero-subtitle {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: clamp(1.2rem, 3vw, 1.6rem);
+    color: var(--text-gray);
+    margin-top: 0;
+}
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+/* Hero iets hoger plaatsen */
+.hero-minimal {
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 5rem 10vw;
+    text-align: center;
+}
 
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600&display=swap" rel="stylesheet">
-
-    <!-- Styles -->
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="logo-container">
-    <img src="logo.png" alt="BrinkSites logo">
-</div>
-
-
-    <!-- HERO -->
-    <section class="hero-minimal">
-    <h1 class="hero-title">Brinksites</h1>
-    <p class="hero-subtitle">Professionele websites voor jouw bedrijf</p>
-    <a href="#about" class="scroll-down">&#x25BC;</a>
-</section>
-
-    <!-- CTA knop -->
-    <a href="#contact" class="hero-cta">Plan een gesprek</a>
-
-    <a href="#about" class="scroll-down">&#x25BC;</a>
-</section>
-
-    <!-- ABOUT -->
-    <section id="about">
-        <div class="content-card">
-            <h2>Over BrinkSites</h2>
-            <p>
-                Mijn naam is Frank Brinkhoff, een jonge ondernemer gespecialiseerd in het bouwen van moderne websites
-                en maatwerk codering.
-            </p>
-            <p>
-                Met BrinkSites help ik bedrijven en zelfstandigen om online professioneel, betrouwbaar en onderscheidend
-                over te komen. Ik combineer strak design met schone code — geen templates, maar oplossingen die echt werken.
-            </p>
-        </div>
-    </section>
-
-    <!-- SERVICES -->
-    <section>
-        <div class="content-card">
-            <h2>Diensten</h2>
-            <ul>
-                <li><strong>Websites op maat</strong> – volledig gecodeerd voor jouw bedrijf</li>
-                <li><strong>Mobile-first design</strong> – perfect op elk scherm</li>
-                <li><strong>Snelheid & SEO</strong> – betere prestaties en vindbaarheid</li>
-                <li><strong>Onderhoud & support</strong> – ook na oplevering beschikbaar</li>
-            </ul>
-        </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section>
-        <div class="content-card contact-card" id="contact">
-            <h2>Contact</h2>
-
-            <form id="contact-form" action="https://formspree.io/f/JOUWCODE" method="POST">
-                <label>Naam</label>
-                <input type="text" name="name" required>
-
-                <label>E-mail</label>
-                <input type="email" name="email" required>
-
-                <label>Bericht</label>
-                <textarea name="message" rows="4" required></textarea>
-
-                <button type="submit">Verstuur bericht</button>
-            </form>
-
-            <p id="confirmation">Bedankt! Je bericht is verzonden naar BrinkSites.</p>
-        </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer>
-        <p>© 2026 BrinkSites — Frank Brinkhoff</p>
-        <p>Webdesign & development voor ambitieuze ondernemers</p>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
-</html>
+/* Logo iets groter */
+.logo-container img {
+    height: 60px;
+    width: auto;
+}
