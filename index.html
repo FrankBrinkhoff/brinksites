@@ -1,34 +1,81 @@
-/* Hero title */
-.hero-title {
-    font-family: 'EB Garamond', serif;
-    font-weight: 600;
-    font-size: clamp(2.5rem, 6vw, 4rem);
-    margin: 0;
-    margin-bottom: 0.5rem;
-    color: var(--blue-accent);
-}
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brinksites - Professionele websites</title>
+    <meta name="description" content="Brinksites - Wij bouwen heldere, moderne websites op maat door Frank Brinkhoff">
 
-/* Hero subtitle */
-.hero-subtitle {
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    font-size: clamp(1.2rem, 3vw, 1.6rem);
-    color: var(--text-gray);
-    margin-top: 0;
-}
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=EB+Garamond:wght@400;600&display=swap" rel="stylesheet">
 
-/* Hero iets hoger plaatsen */
-.hero-minimal {
-    min-height: 85vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding: 5rem 10vw;
-    text-align: center;
-}
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-/* Logo iets groter */
-.logo-container img {
-    height: 60px;
-    width: auto;
-}
+    <!-- HERO SECTIE -->
+    <section class="hero-minimal">
+        <h1 class="hero-title">Brinksites</h1>
+        <p class="hero-subtitle">Professionele websites voor jouw bedrijf</p>
+        <a href="#about" class="scroll-down">&#x25BC;</a>
+    </section>
+
+    <!-- OVER MIJ -->
+    <section class="about" id="about">
+        <div class="section-container">
+            <h2>Over mij</h2>
+            <p>
+                Ik ben Frank Brinkhoff, jonge ondernemer gespecialiseerd in websites en codering. 
+                Met passie voor design, functionaliteit en kwaliteit bouw ik op maat gemaakte websites 
+                die jouw bedrijf laten groeien.
+            </p>
+        </div>
+    </section>
+
+    <!-- DIENSTEN -->
+    <section class="services">
+        <div class="section-container">
+            <h2>Diensten</h2>
+            <ul>
+                <li>Website ontwikkeling</li>
+                <li>Responsive design</li>
+                <li>Onderhoud & optimalisatie</li>
+                <li>SEO / performance</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact">
+        <div class="section-container">
+            <h2>Contact</h2>
+            <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                <label for="name">Naam</label>
+                <input type="text" id="name" name="name" placeholder="Jouw naam" required>
+
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="Jouw e-mail" required>
+
+                <label for="message">Bericht</label>
+                <textarea id="message" name="message" placeholder="Typ je bericht hier..." required></textarea>
+
+                <button type="submit">Verstuur</button>
+            </form>
+            <p id="confirmation" style="display:none;">Bedankt! Je bericht is verzonden.</p>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Brinksites © 2026 | Frank Brinkhoff</p>
+        <p>Minimalistisch webdesign</p>
+    </footer>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
+
