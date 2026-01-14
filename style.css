@@ -68,14 +68,6 @@ body {
     color: var(--blue-accent);
 }
 
-.hero-subtitle {
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    font-size: clamp(1.2rem, 3vw, 1.6rem);
-    color: var(--text-gray);
-    margin-top: 0;
-}
-
 /* Scroll pijl */
 .scroll-down {
     display: inline-block;
