@@ -1,4 +1,4 @@
-/* ================== THEME COLORS ================== */
+/* THEME COLORS */
 :root {
     --blue-light: #38bdf8;
     --blue-soft: #bae6fd;
@@ -8,7 +8,7 @@
     --text-gray: #334155;
 }
 
-/* ================== BASE ================== */
+/* BASE */
 body {
     font-family: 'Inter', system-ui, sans-serif;
     background: var(--white);
@@ -17,12 +17,24 @@ body {
     line-height: 1.6;
 }
 
-/* ================== HERO ================== */
+/* LOGO */
+.logo-container {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+}
+.logo-container img {
+    height: 70px; /* groter logo */
+    width: auto;
+}
+
+/* HERO */
 .hero-minimal {
     min-height: 85vh;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* iets hoger */
+    justify-content: flex-start;
     align-items: center;
     padding: 5rem 10vw;
     text-align: center;
@@ -54,7 +66,6 @@ body {
     text-decoration: none;
     transition: transform 0.3s;
 }
-
 .scroll-down:hover {
     transform: translateY(5px);
     cursor: pointer;
@@ -65,56 +76,48 @@ html {
     scroll-behavior: smooth;
 }
 
-/* ================== SECTIES ================== */
+/* SECTIES */
 section {
     padding: 6rem 10vw;
 }
-
 .section-container {
     background-color: var(--white);
     padding: 2rem 2rem;
     border-radius: 12px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.05);
 }
-
 section h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
     color: var(--blue-accent);
 }
-
 section p, section li {
     font-size: 1rem;
     color: var(--text-gray);
 }
-
 .services ul {
     list-style-type: disc;
     padding-left: 1.5rem;
 }
 
-/* ================== CONTACT ================== */
+/* CONTACT */
 .contact form {
     display: flex;
     flex-direction: column;
     max-width: 400px;
     margin-top: 1rem;
 }
-
 .contact label {
     margin-top: 1rem;
     margin-bottom: 0.25rem;
     font-weight: 500;
 }
-
-.contact input, 
-.contact textarea {
+.contact input, .contact textarea {
     padding: 0.5rem;
     border: 1px solid #cbd5e1;
     border-radius: 4px;
     font-size: 1rem;
 }
-
 .contact button {
     margin-top: 1rem;
     padding: 0.75rem;
@@ -126,12 +129,11 @@ section p, section li {
     font-size: 1rem;
     transition: background 0.3s;
 }
-
 .contact button:hover {
     background-color: var(--blue-light);
 }
 
-/* ================== FOOTER ================== */
+/* FOOTER */
 footer {
     text-align: center;
     padding: 3rem 10vw;
@@ -140,7 +142,7 @@ footer {
     border-top: 1px solid #e2e8f0;
 }
 
-/* ================== ANIMATED BACKGROUND ================== */
+/* ANIMATED BACKGROUND */
 body::before {
     content: "";
     position: fixed;
@@ -153,16 +155,16 @@ body::before {
     z-index: -1;
 }
 
-/* ================== ANIMATIE ================== */
+/* ANIMATIE */
 @keyframes spiralMove {
     0% { transform: rotate(0deg) scale(1); }
     100% { transform: rotate(360deg) scale(1.2); }
 }
 
-/* ================== RESPONSIVE ================== */
+/* RESPONSIVE */
 @media (max-width: 768px) {
     .hero-title { font-size: 2.5rem; }
     .hero-subtitle { font-size: 1.2rem; }
     section { padding: 4rem 5vw; }
+    .logo-container img { height: 60px; }
 }
-
