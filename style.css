@@ -24,8 +24,9 @@ body {
     left: 20px;
     z-index: 10;
 }
+
 .logo-container img {
-    height: 70px; /* groter logo */
+    height: 60px; /* mooi formaat, niet te groot of te klein */
     width: auto;
 }
 
@@ -34,11 +35,29 @@ body {
     min-height: 85vh;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center; /* centreren vertical */
     align-items: center;
     padding: 5rem 10vw;
     text-align: center;
 }
+
+.hero-title {
+    font-family: 'EB Garamond', serif;
+    font-weight: 600;
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    margin: 0;
+    margin-bottom: 0.5rem;
+    color: var(--blue-accent);
+}
+
+.hero-subtitle {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: clamp(1.2rem, 3vw, 1.6rem);
+    color: var(--text-gray);
+    margin-top: 0;
+}
+
 
 .hero-title {
     font-family: 'EB Garamond', serif;
